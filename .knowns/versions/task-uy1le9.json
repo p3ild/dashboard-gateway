@@ -1,0 +1,33 @@
+{
+  "taskId": "uy1le9",
+  "currentVersion": 1,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "uy1le9",
+      "version": 1,
+      "timestamp": "2026-05-25T08:12:43.735196Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "todo"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "medium"
+        }
+      ],
+      "snapshot": {
+        "description": "Replace/compose previous sidebar controls with src/core/page/report/NavBar.jsx in the DashboardBase page, mapping any props as needed so export/print/settings work.",
+        "labels": [
+          "from-spec"
+        ],
+        "priority": "medium",
+        "status": "todo",
+        "title": "UI integration: use NavBar in DashboardBase"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "taskId": "igwnqo",
+  "currentVersion": 1,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "igwnqo",
+      "version": 1,
+      "timestamp": "2026-05-25T08:12:30.951862Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "todo"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "medium"
+        }
+      ],
+      "snapshot": {
+        "description": "Add top-level export defaultDashboardId to each instance config (e.g., src/instanceConfig/baocao25/index.js). Validate that prepareApp reads it as instanceTarget.defaultDashboardId.",
+        "labels": [
+          "from-spec"
+        ],
+        "priority": "medium",
+        "status": "todo",
+        "title": "Add instanceConfig.defaultDashboardId (config)"
+      }
+    }
+  ]
+}

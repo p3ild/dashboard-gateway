@@ -53,9 +53,9 @@ export async function exportToExcel() {
 
         const link = document.createElement("a");
         let periods = corePicker?.periodSelected?.outputDataDhis2?.split(';');
-        let listReport = getCoreMetaStateByPath('listReport');
+        let programs = getCoreMetaStateByPath('programs');
         let reportTarget = getCoreMetaStateByPath('reportTarget');
-        let currentReportData = listReport?.find(e => e.id == reportTarget?.reportID);
+        let currentReportData = programs?.find(e => e.id == reportTarget?.reportID);
         let defaultNameReport =
             [
                 currentReportData.title

@@ -15,7 +15,7 @@ class Base {
             .then(e => e.reports);
 
 
-        let fullReportData = this.listReport.map((ele, idx, arr) => {
+        let fullReportData = this.programs.map((ele, idx, arr) => {
             let reportPulled = pulledReportDataList.find(e => e.id == ele.key);
             ele['link'] = `${networkUtils.INIT_HOST}/dhis-web-reports/index.html#/standard-report/view/${reportPulled?.id}`;
             ele.title = reportPulled?.displayName || ele.displayName
@@ -59,7 +59,7 @@ class Base {
         })
         return {
             listFolder,
-            listReport: fullReportData
+            programs: fullReportData
         }
     }
 
