@@ -3,7 +3,7 @@ import { useShallow } from "zustand/react/shallow";
 import '../common/circular37-mui.css';
 import { Tabs } from "antd";
 import { TableData } from "../common/ui/MultiTableUI";
-import { useLoadData } from "./hook";
+import useMetadataOnly from '@core/hooks/useMetadataOnly';
 import { PERIOD_TYPE } from "@core/ui/picker/periodpicker/constant";
 import { useCoreMetaState } from "@core/stateManage/metadataState";
 import { useCorePickerState } from "@core/stateManage/corePickerState";
@@ -29,13 +29,15 @@ export default () => {
     ]));
 
     const {
-        data,
-        orgReportName,
-        dhis2Period,
-        ButtonLoadMore
-    } = useLoadData({
+        me, programs, listFolder, systemSettings, language
+    } = useMetadataOnly();
 
-    });
+    // Derive UI props from metadata for the metadata-only clone
+    const data = [];
+    const orgReportName = '';
+    const dhis2Period = '';
+    const ButtonLoadMore = () => <></>;
+
     useEffect(
         () => {
             setAllowPeriodTypes([
