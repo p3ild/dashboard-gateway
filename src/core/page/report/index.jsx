@@ -180,7 +180,7 @@ export function ReportList({ type }) {
         let reportSelected = item[0];
 
         let reportID = reportSelected.key;
-        let reportConfig = instanceTarget.listReport.find(e => e.key == reportID);
+        let reportConfig = instanceTarget.programs.find(e => e.key == reportID);
 
         if (reportConfig) {
             navigate(`/report?id=${reportID}`, { state: { refresh: Date.now() } });

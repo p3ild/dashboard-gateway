@@ -16,9 +16,9 @@ export const NavigateMainComponenet = ({
 }) => {
     const navigate = useNavigate()
     const [
-        me
+        me, instanceTarget
     ] = useCoreMetaState(useShallow(state => [
-        state.me
+        state.me, state.instanceTarget
     ]))
     const ReportMemo = useMemo(() => {
         return <Report
@@ -34,7 +34,9 @@ export const NavigateMainComponenet = ({
         <Routes>
             <Route
                 path="/"
-                element={<Navigate to="/home" replace />}
+                element={
+                    (instanceTarget && instanceTarget.defaultDashboardId) ? <Navigate to={`/report?id=${instanceTarget.defaultDashboardId}`} replace /> : <Navigate to="/home" replace />
+                }
             />
             <Route path="/home" element={<HomeMemo
                 {...{

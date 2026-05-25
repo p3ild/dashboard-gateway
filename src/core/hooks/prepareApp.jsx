@@ -82,7 +82,7 @@ export const useMetadataAddition = () => {
         networkUtils, language, instanceTarget,
         setSystemSettings,
         setMe,
-        setListReport,
+        setPrograms,
         setListFolder,
         firstLoadApp,
         setLanguage
@@ -90,7 +90,7 @@ export const useMetadataAddition = () => {
         state.networkUtils, state.language, state.instanceTarget,
         state.actions.setSystemSettings,
         state.actions.setMe,
-        state.actions.setListReport,
+        state.actions.setPrograms,
         state.actions.setListFolder,
         state.firstLoadApp,
         state.actions.setLanguage,
@@ -128,11 +128,11 @@ export const useMetadataAddition = () => {
                     //     }
                     // },
                     {
-                        key: "LIST_REPORT",
+                        key: "LIST_PROGRAMS",
                         fetch: () => {
                             return instanceTarget.getListReport({ networkUtils, instanceTarget })
-                                .then(({ listReport, listFolder }) => {
-                                    setListReport(listReport)
+                                .then(({ programs, listFolder }) => {
+                                    setPrograms(programs)
                                     setListFolder(listFolder)
                                 });
                         }

@@ -1,0 +1,33 @@
+{
+  "taskId": "72vruz",
+  "currentVersion": 1,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "72vruz",
+      "version": 1,
+      "timestamp": "2026-05-25T08:12:39.65767Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "todo"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "high"
+        }
+      ],
+      "snapshot": {
+        "description": "Update ReportBase / report-loading flow so the default id is loaded via the same codepath as user selection; ensure the selected report is reflected in Zustand store and toolbar actions work unchanged.",
+        "labels": [
+          "from-spec"
+        ],
+        "priority": "high",
+        "status": "todo",
+        "title": "Report loading \u0026 state plumbing"
+      }
+    }
+  ]
+}

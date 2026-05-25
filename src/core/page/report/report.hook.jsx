@@ -137,7 +137,7 @@ export function useReportTarget({ listParam, setOrgSelected, metadata_utils }) {
         if (!listParam || Object.keys(listParam).length === 0) return undefined; // Fix: Check object keys instead of length
         (async () => {
             //Find target report over key ID
-            let reportImport = await instanceTarget?.listReport?.find(e => e.key == listParam.id)?.getReportInstance();
+            let reportImport = await instanceTarget?.programs?.find(e => e.key == listParam.id)?.getReportInstance();
             if (!reportImport) {
                 reportImport = {
                     errors: [
@@ -199,7 +199,7 @@ export function useReportTarget({ listParam, setOrgSelected, metadata_utils }) {
                 {
                     ...reportImport,
                     reportID: listParam.id,
-                    // reportName: listReport
+                    // reportName: programs
                 }
             );
 

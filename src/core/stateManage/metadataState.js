@@ -19,7 +19,7 @@ export const useCoreMetaState = create((set, get) => (
         version: undefined,
         language: undefined,
         error: undefined,
-        listReport: [],
+        programs: [],
         listFolder: [],
         activeFolder: '',
         approvalData: {},
@@ -80,7 +80,7 @@ export const useCoreMetaState = create((set, get) => (
                     meData: me
                 }
             }),
-            setListReport: async (listReport) => set(state => ({ listReport })),
+            setPrograms: async (programs) => set(state => ({ programs })),
             setListFolder: async (listFolder) => set(state => ({ listFolder })),
             setNetworkUtils: async (networkUtils) => set(state => ({ networkUtils })),
 

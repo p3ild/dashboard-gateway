@@ -1,0 +1,33 @@
+{
+  "taskId": "k72ocu",
+  "currentVersion": 1,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "k72ocu",
+      "version": 1,
+      "timestamp": "2026-05-25T08:12:35.498545Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "todo"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "high"
+        }
+      ],
+      "snapshot": {
+        "description": "Ensure `/` renders DashboardBase and triggers default-report load when instanceTarget.defaultDashboardId exists (edit src/core/ui/mainbody/Main.navigate.jsx).",
+        "labels": [
+          "from-spec"
+        ],
+        "priority": "high",
+        "status": "todo",
+        "title": "Routing: DashboardBase at `/` (route + entrypoint)"
+      }
+    }
+  ]
+}

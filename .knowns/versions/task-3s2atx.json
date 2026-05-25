@@ -1,0 +1,33 @@
+{
+  "taskId": "3s2atx",
+  "currentVersion": 1,
+  "versions": [
+    {
+      "id": "v1",
+      "taskId": "3s2atx",
+      "version": 1,
+      "timestamp": "2026-05-25T08:12:24.270948Z",
+      "changes": [
+        {
+          "field": "status",
+          "oldValue": null,
+          "newValue": "todo"
+        },
+        {
+          "field": "priority",
+          "oldValue": null,
+          "newValue": "high"
+        }
+      ],
+      "snapshot": {
+        "description": "Run gitnexus_impact for symbols to be edited (ReportBase, Main.navigate, prepareApp, NavBar). Report blast radius and any HIGH/CRITICAL warnings before making code changes.",
+        "labels": [
+          "from-spec"
+        ],
+        "priority": "high",
+        "status": "todo",
+        "title": "Pre-change: GitNexus impact analysis (blocking)"
+      }
+    }
+  ]
+}

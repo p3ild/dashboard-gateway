@@ -5,7 +5,7 @@ export const INIT_APP_TASK = {
     SYSTEM_SETTINGS: {
         title: "Dữ liệu cài đặt",
     },
-    LIST_REPORT: {
+    LIST_PROGRAMS: {
         title: "Dữ liệu báo cáo",
     },
     ORG: {

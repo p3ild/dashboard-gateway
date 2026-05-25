@@ -5,6 +5,8 @@ import { classifyingOrgSelected } from "./p2ild/common/request/utils";
 export { classifyingOrgSelected, locale };
 
 class Config extends Base {
+  // default dashboard report id for landing page
+  defaultDashboardId = "bzTX9jvywsh"
   // Server configuration
   // BASE_URL = "https://dev.tkyt.vn/bc23";
   BASE_URL = "https://baocao.tkyt.vn";
@@ -28,7 +30,7 @@ class Config extends Base {
     // },
   };
 
-  listReport = [
+  programs = [
     {
       key: "bzTX9jvywsh",
       folder: [this.listFolder.A6],
