@@ -35,7 +35,9 @@ export const NavigateMainComponenet = ({
             <Route
                 path="/"
                 element={
-                    (instanceTarget && instanceTarget.defaultDashboardId) ? <Navigate to={`/report?id=${instanceTarget.defaultDashboardId}`} replace /> : <Navigate to="/home" replace />
+                    instanceTarget ? (
+                        instanceTarget.defaultDashboardId ? <Navigate to={`/report?id=${instanceTarget.defaultDashboardId}`} replace /> : <Navigate to="/home" replace />
+                    ) : <></>
                 }
             />
             <Route path="/home" element={<HomeMemo
